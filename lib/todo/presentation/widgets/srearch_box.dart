@@ -41,7 +41,11 @@ class SearchBox extends StatelessWidget {
                   side: BorderSide(color: Colors.white70), // Add a white border
                 ),
                 onPressed: () {},
-                child: Text('Search', style: btnStyle),
+                child: Text('Search', style:  TextStyle(
+                    fontSize: screenSize.width/145,
+                    fontWeight: FontWeight.w300,
+                    color: Colors.white
+                )),
               ),
               SizedBox(width: 16), // Optional spacing
             ],
@@ -49,7 +53,11 @@ class SearchBox extends StatelessWidget {
           MaterialButton(
             color: Colors.green.shade700,
             onPressed: () {},
-            child: Text('Create new +',style: btnStyle,),
+            child: Text('Create new +',style: TextStyle(
+                fontSize: screenSize.width/145,
+                fontWeight: FontWeight.w300,
+                color: Colors.white
+            ),),
           ),
         ],
       ),

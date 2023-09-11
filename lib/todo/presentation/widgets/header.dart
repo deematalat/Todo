@@ -24,7 +24,11 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('Employees', style: titleStyle),
+                Text('Employees', style: TextStyle(
+                    fontSize: screenSize.width/75,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.white
+                )),
                 Row(
                   children: [
                     IconButton(
@@ -53,7 +57,11 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
                           ),
                           Text(
                             'Comeron willisamson',
-                            style: userNameStyle,
+                            style:  TextStyle(
+                                fontSize: screenSize.width/130,
+                                fontWeight: FontWeight.w400,
+                                color: Colors.white
+                            ),
                           ),
                         ],
                       ),
